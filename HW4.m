@@ -3,28 +3,28 @@
 %1)
 
 % differential equation in matrix form
-%A = [ 0 0 -1; 2 0 0; -1 2 4];
-%I = [1 0 0; 0 1 0; 0 0 1];
+A = [ 0 0 -1; 2 0 0; -1 2 4];
+I = [1 0 0; 0 1 0; 0 0 1];
 
-%A_e = eig(A)
+A_e = eig(A)
 
 % eigenvalues of the matrix A
 
-%sigma_1 = A_e(1);
-%sigma_2 = A_e(2);
-%sigma_3 = A_e(3);
+sigma_1 = A_e(1);
+sigma_2 = A_e(2);
+sigma_3 = A_e(3);
 
-%A_1 = A - sigma_1*I;
-%rref(A_1);
+A_1 = A - sigma_1*I;
+rref(A_1);
 
-%A_2 = A - sigma_2*I;
-%rref(A_2);
+A_2 = A - sigma_2*I;
+rref(A_2);
 
-%A_3 = A - sigma_3*I;
-%rref(A_3);
+A_3 = A - sigma_3*I;
+rref(A_3);
 
-%B = [-1 -1 -2 7; 2 -2 -1 5; -1 1 8 5];
-%rref(B)
+B = [-1 -1 -2 7; 2 -2 -1 5; -1 1 8 5];
+rref(B)
 
 %2) Radioactive Nuclei decay dN/dt = -lambda * N
 
